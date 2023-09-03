@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #01000e;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,36 +16,119 @@ body {
 
 .main {
     background-color: rgba(0, 0, 0, .9);
-    width: 80%;
+    width: 60%;
     max-width: 960px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0 10px;
 }
 
-.main-title{
+.main-title {
     display: inline-block;
     color: white;
-    padding-left: 35px;
+    padding: 0 50px;
     text-transform: uppercase;
 }
 
-.menu li{
-    list-style-type: none;
-    display: inline-block;
+.menu {
+    padding: 10px;
 }
 
-.menu a{
+.menu li {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.menu a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 10px;
 }
 
-#menu_btn{
+#menu_btn {
     background-color: yellow;
     color: black;
     border-radius: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.subtitle h2{
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.container-itens {
+    flex-basis: 300px;
+    background-color: #1d1d1d;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container-itens h3 {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid yellow;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container-valor {
+    width: 50;
+    display: inline-block;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.container-itens p {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.container-itens ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.container-itens li {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+#btn-ass {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+#btn-ass a {
+    display: block;
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
