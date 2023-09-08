@@ -2,78 +2,74 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Cards</title>
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="main">
-        <div class="main-title">
-            <h1>Myserver</h1>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a id="menu_btn" href="#">Planos</a></li>
-                <li><a href="#">Suporte</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="header__logo">Myserver</div>
 
-    <div class="subtitle">
-        <h2>Escolha seu plano</h2>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a class="class-plan__nav__active" href="#">Planos</a></li>
+        <li><a href="#">Suporte</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="main-title">Escolha seu plano</h1>
+
+  <section>
+    <div class="pricing">
+      <div class="pricing-plan">
+        <h2 class="class-plan__title">Essencial</h2>
+        <p><span class="pricing-plan__price">R$ 3.95</span>/ mês</p>
+
+        <ul class="pricing-plan__features">
+          <li>1 website</li>
+          <li>1GB de armazenamento</li>
+          <li>10GB de transferência</li>
+        </ul>
+
+        <a class="pricing-plan__cta" href="#">Assine já</a>
+      </div>
+
+      <div class="pricing-plan">
+        <h2 class="class-plan__title">Premium</h2>
+        <p><span class="pricing-plan__price">R$ 7.95</span>/ mês</p>
+
+        <ul class="pricing-plan__features">
+          <li>5 Websites</li>
+          <li>3GB de armazenamento</li>
+          <li>Transferência ilimitada</li>
+          <li>10 horas de suporte mensais</li>
+        </ul>
+
+        <a class="pricing-plan__cta" href="#">Assine já</a>
+      </div>
+
+      <div class="pricing-plan">
+        <h2 class="class-plan__title">Gold</h2>
+        <p><span class="pricing-plan__price">R$ 13.95</span>/ mês</p>
+
+        <ul class="pricing-plan__features">
+          <li>10 Websites</li>
+          <li>30GB de armazenamento</li>
+          <li>Transferência ilimitada</li>
+          <li>30 horas de suporte mensais</li>
+          <li>Email personalidado</li>
+        </ul>
+
+        <a class="pricing-plan__cta" href="#">Assine já</a>
+      </div>
     </div>
-
-    <div class="container">
-        <div class="container-itens">
-            <h3>Essencial</h3>
-            <div>
-                <p class="container-valor">R$ 3.95</p>
-                <p>/ mês</p>
-            </div>
-            <ul>
-                <li>1 website</li>
-                <li>1GB de armazenamento</li>
-                <li>10GB de transferência</li>
-            </ul>
-            <p id="btn-ass"><a href="#">Assine já</a></p>
-        </div>
-
-        <div class="container-itens">
-            <h3>Premium</h3>
-            <div>
-                <p class="container-valor">R$ 7.95</p>
-                <p>/ mês</p>
-            </div>
-            <ul>
-                <li>5 Websites</li>
-                <li>3GB de armazenamento</li>
-                <li>Transferência ilimitada</li>
-                <li>10 horas de suporte mensais</li>
-            </ul>
-            <p id="btn-ass"><a href="#">Assine já</a></p>
-        </div>
-
-        <div class="container-itens">
-            <h3>Gold</h3>
-            <div>
-                <p class="container-valor">R$ 13.95</p>
-                <p>/ mês</p>
-            </div>
-            <ul>
-                <li>10 Websites</li>
-                <li>30GB de armazenamento</li>
-                <li>Transferência ilimitada</li>
-                <li>30 horas de suporte mensais</li>
-                <li>Email personalidado</li>
-            </ul>
-            <p id="btn-ass"><a href="#">Assine já</a></p>
-        </div>
-    </div>
+  </section>
 </body>
 
 </html>

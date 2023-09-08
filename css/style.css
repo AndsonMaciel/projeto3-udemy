@@ -1,130 +1,114 @@
-html {
-    height: 100%;
-}
-
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #01000e;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
-
-.main {
-    background-color: rgba(0, 0, 0, .9);
-    width: 60%;
-    max-width: 960px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+  background-color: #0c1014;
+  color: white;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .main-title {
-    display: inline-block;
-    color: white;
-    padding: 0 50px;
-    text-transform: uppercase;
+  font-size: 62px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 46px 0;
+  letter-spacing: 2px;
 }
 
-.menu {
-    padding: 10px;
+.header {
+  display: flex;
+  background-color: #05080b;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu li {
-    display: inline-block;
-    list-style-type: none;
-
+.header__logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-left: 16px;
 }
 
-.menu a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
+.header__nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 18px;
+  gap: 16px;
 }
 
-#menu_btn {
-    background-color: yellow;
-    color: black;
-    border-radius: 5px;
+.header__nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 6px;
 }
 
-.subtitle {
-    text-align: center;
-    font-size: 40px;
-    text-transform: uppercase;
+a.class-plan__nav__active {
+  background-color: #cbe300;
+  color: #0c1014;
+  pointer-events: none;
 }
 
-.subtitle h2{
-    margin: 0;
-    padding: 40px;
+.header__nav a:hover {
+  text-decoration: underline;
 }
 
-.container {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.pricing {
+  display: flex;
+  gap: 16px;
 }
 
-.container-itens {
-    flex-basis: 300px;
-    background-color: #1d1d1d;
-    padding: 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.pricing-plan {
+  flex: 1;
+  background-color: #1f2c2c;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 5px 12px black;
+  display: flex;
+  flex-direction: column;
 }
 
-.container-itens h3 {
-    margin: 0;
-    padding: 10px 0;
-    border-bottom: 2px solid yellow;
-    font-size: 25px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.class-plan__title {
+  text-transform: uppercase;
+  border-bottom: 2px solid #cbe300;
+  margin-top: 0;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
 }
 
-.container-valor {
-    display: inline-block;
-    font-size: 30px;
+.pricing-plan p {
+  margin-top: 0;
 }
 
-.container-itens p {
-    display: inline-block;
-    margin: 15px 0 0 0;
+.pricing-plan__price {
+  font-size: 34px;
 }
 
-.container-itens ul {
-    padding: 0;
-    list-style-position: inside;
-    height: 120px;
+.pricing-plan__features {
+  margin: 0 0 35px;
+  color: #b5b5b5;
+  padding-left: 16px;
+  line-height: 1.8;
+  flex-grow: 1;
 }
 
-.container-itens li {
-    font-size: 14px;
-    padding-bottom: 10px;
+.pricing-plan__features li::marker {
+  color: #cbe300;
 }
 
-#btn-ass {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0;
+.pricing-plan__cta {
+  text-decoration: none;
+  color: #0c1014;
+  background-color: #cbe300;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 10px;
+  text-align: center;
 }
 
-#btn-ass a {
-    display: block;
-    background-color: yellow;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
+.pricing-plan__cta:hover{
+  outline: 2px solid #cbe300;
+  background-color: transparent;
 }
